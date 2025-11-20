@@ -18,8 +18,8 @@ export default function Features() {
       icon: "🤖",
       title: "AI-Powered Guidance",
       description: "Get instant answers to your investing questions 24/7. Our AI chatbot explains concepts, analyzes your portfolio, and provides personalized tips.",
-      color: "from-primary/10 to-green-600/10",
-      textColor: "text-primary"
+      color: "from-[#00C853]/10 to-green-600/10",
+      textColor: "text-[#00C853]"
     },
     {
       icon: "📈",
@@ -49,13 +49,13 @@ export default function Features() {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-2 bg-primary-light/30 rounded-full px-4 py-2 mb-6">
-            <span className="text-primary font-medium text-sm">✨ Everything You Need</span>
+          <div className="inline-flex items-center space-x-2 bg-[#B9F6CA]/30 rounded-full px-4 py-2 mb-6">
+            <span className="text-[#00C853] font-medium text-sm">✨ Everything You Need</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-text-primary mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#212121] mb-6">
             Learn, Practice, and Master Investing
           </h2>
-          <p className="text-xl text-text-secondary">
+          <p className="text-xl text-[#757575]">
             All the tools you need to go from complete beginner to confident investor
           </p>
         </div>
@@ -73,10 +73,10 @@ export default function Features() {
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-bold text-text-primary mb-3">
+              <h3 className="text-xl font-bold text-[#212121] mb-3">
                 {feature.title}
               </h3>
-              <p className="text-text-secondary leading-relaxed">
+              <p className="text-[#757575] leading-relaxed">
                 {feature.description}
               </p>
 
@@ -93,7 +93,7 @@ export default function Features() {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <button className="bg-primary hover:bg-primary-dark text-white font-semibold px-8 py-4 rounded-xl transition-all transform hover:scale-105 shadow-lg">
+          <button className="bg-[#00C853] hover:bg-[#00A043] text-white font-semibold px-8 py-4 rounded-xl transition-all transform hover:scale-105 shadow-lg">
             Try All Features Free
           </button>
         </div>

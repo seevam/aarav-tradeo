@@ -1,6 +1,6 @@
 export default function CTA() {
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-br from-primary to-primary-dark relative overflow-hidden">
+    <section className="py-20 lg:py-32 bg-gradient-to-br from-[#00C853] to-[#00A043] relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
@@ -23,7 +23,7 @@ export default function CTA() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button className="bg-white text-primary hover:bg-gray-50 font-semibold px-10 py-5 rounded-xl transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl text-lg">
+            <button className="bg-white text-[#00C853] hover:bg-gray-50 font-semibold px-10 py-5 rounded-xl transition-all transform hover:scale-105 shadow-xl hover:shadow-2xl text-lg">
               Get Started Free
             </button>
             <button className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-semibold px-10 py-5 rounded-xl transition-all text-lg">
