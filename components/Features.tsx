@@ -1,81 +1,83 @@
 export default function Features() {
   const features = [
     {
-      icon: "📚",
-      title: "Gamified Learning",
-      description: "Interactive lessons designed like your favorite games. Earn XP, unlock levels, and build streaks as you master investing fundamentals."
+      icon: '📚',
+      title: 'Gamified Learning',
+      description: 'Interactive lessons designed like your favorite games. Earn XP, unlock levels, and build streaks as you master investing fundamentals.',
+      bgColor: 'bg-[#e8f5ff]',
+      iconBg: 'bg-[#d1ebff]'
     },
     {
-      icon: "📊",
-      title: "Real-Time Stock Simulation",
-      description: "Practice with $100,000 virtual capital on real market data. No risk, all the learning. Trade stocks from major Southeast Asian exchanges."
+      icon: '📊',
+      title: 'Real-Time Stock Simulation',
+      description: 'Practice with $100,000 virtual capital on real market data. No risk, all the learning. Trade stocks from major Southeast Asian exchanges.',
+      bgColor: 'bg-[#fff4e6]',
+      iconBg: 'bg-[#ffe9cc]'
     },
     {
-      icon: "🤖",
-      title: "AI-Powered Guidance",
-      description: "Get instant answers to your investing questions 24/7. Our AI chatbot explains concepts, analyzes your portfolio, and provides personalized tips."
+      icon: '🤖',
+      title: 'AI-Powered Guidance',
+      description: 'Get instant answers to your investing questions 24/7. Our AI chatbot explains concepts, analyzes your portfolio, and provides personalized tips.',
+      bgColor: 'bg-[#f3e8ff]',
+      iconBg: 'bg-[#e7d1ff]'
     },
     {
-      icon: "📈",
-      title: "Investment Tracking",
-      description: "Monitor your spending habits, set savings goals, and get AI recommendations on how much you can invest based on your financial situation."
+      icon: '📈',
+      title: 'Investment Tracking',
+      description: 'Monitor your spending habits, set savings goals, and get AI recommendations on how much you can invest based on your financial situation.',
+      bgColor: 'bg-[#e6fff5]',
+      iconBg: 'bg-[#ccffe6]'
     },
     {
-      icon: "🏆",
-      title: "Social Leaderboards",
-      description: "Compete with friends and climb the rankings. Share achievements, join challenges, and stay motivated with our community features."
+      icon: '🏆',
+      title: 'Social Leaderboards',
+      description: 'Compete with friends and climb the rankings. Share achievements, join challenges, and stay motivated with our community features.',
+      bgColor: 'bg-[#fff0f0]',
+      iconBg: 'bg-[#ffe1e1]'
     },
     {
-      icon: "🌏",
-      title: "Localized for SEA",
-      description: "Content in your language with examples from companies you know. Built specifically for Indonesia, Thailand, Vietnam, Philippines, Malaysia, and Singapore."
+      icon: '🌏',
+      title: 'Localized for SEA',
+      description: 'Content in your language with examples from companies you know. Built specifically for Indonesia, Thailand, Vietnam, Philippines, Malaysia, and Singapore.',
+      bgColor: 'bg-[#f0f4ff]',
+      iconBg: 'bg-[#e1e9ff]'
     }
   ];
 
   return (
-    <section id="features" className="py-16 md:py-24 lg:py-32 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="features" className="py-16 md:py-20 bg-white">
+      <div className="max-w-[1200px] mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <div className="inline-flex items-center gap-2 bg-[#b9f6ca]/20 rounded-full px-4 py-2 mb-6">
-            <span className="text-[#00c853] font-semibold text-sm">✨ Everything You Need</span>
-          </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#212121] mb-4 md:mb-6">
-            Learn, Practice, and Master Investing
+        <div className="text-center max-w-[720px] mx-auto mb-12">
+          <h2 className="text-[36px] md:text-[44px] font-bold text-[#292929] mb-4">
+            Everything you need to start investing
           </h2>
-          <p className="text-lg md:text-xl text-[#757575]">
-            All the tools you need to go from complete beginner to confident investor
+          <p className="text-[17px] text-[#666666]">
+            All the tools to go from complete beginner to confident investor
           </p>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
+        {/* Features Grid - Groww Style */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group bg-white border border-gray-200 rounded-2xl p-6 md:p-8 hover:shadow-xl hover:border-[#00c853]/20 transition-all duration-300 hover:-translate-y-1"
+              className="bg-white rounded-lg p-6 border border-gray-100 hover:shadow-lg transition-all duration-200"
             >
               {/* Icon */}
-              <div className="w-14 h-14 bg-[#b9f6ca]/20 rounded-xl flex items-center justify-center text-3xl mb-5 group-hover:scale-110 transition-transform">
+              <div className={`w-14 h-14 ${feature.iconBg} rounded-lg flex items-center justify-center text-3xl mb-4`}>
                 {feature.icon}
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-bold text-[#212121] mb-3">
+              <h3 className="text-[19px] font-semibold text-[#292929] mb-2">
                 {feature.title}
               </h3>
-              <p className="text-[#757575] leading-relaxed">
+              <p className="text-[15px] text-[#666666] leading-relaxed">
                 {feature.description}
               </p>
             </div>
           ))}
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center">
-          <button className="bg-[#00c853] hover:bg-[#00a043] text-white font-semibold px-8 py-4 rounded-xl transition-all shadow-lg hover:shadow-xl transform hover:scale-105">
-            Try All Features Free
-          </button>
         </div>
       </div>
     </section>

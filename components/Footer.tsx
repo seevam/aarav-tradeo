@@ -2,99 +2,89 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#212121] text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+    <footer className="bg-[#0e1525] text-white">
+      <div className="max-w-[1200px] mx-auto px-6 py-12 md:py-16">
         {/* Main Footer Content */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-12 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-[#00c853] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">T</span>
+              <div className="w-9 h-9 bg-[#00d09c] rounded-md flex items-center justify-center">
+                <span className="text-white font-bold text-lg">T</span>
               </div>
-              <span className="text-2xl font-bold">Tradeo</span>
+              <span className="text-xl font-semibold">Tradeo</span>
             </div>
-            <p className="text-white/70 mb-6 leading-relaxed">
+            <p className="text-white/60 text-[14px] leading-relaxed mb-6">
               Empowering the next generation of Southeast Asian investors through gamified learning and risk-free practice.
             </p>
             {/* Social Links */}
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00c853] rounded-lg flex items-center justify-center transition-colors">
-                <span className="text-xl">𝕏</span>
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00c853] rounded-lg flex items-center justify-center transition-colors">
-                <span className="text-xl">📘</span>
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00c853] rounded-lg flex items-center justify-center transition-colors">
-                <span className="text-xl">📷</span>
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00c853] rounded-lg flex items-center justify-center transition-colors">
-                <span className="text-xl">▶️</span>
-              </a>
+            <div className="flex gap-3">
+              {['𝕏', '📘', '📷', '▶️'].map((icon, index) => (
+                <a
+                  key={index}
+                  href="#"
+                  className="w-9 h-9 bg-white/10 hover:bg-[#00d09c] rounded-md flex items-center justify-center transition-colors text-lg"
+                >
+                  {icon}
+                </a>
+              ))}
             </div>
           </div>
 
           {/* Product Links */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Product</h3>
+            <h3 className="font-semibold text-[15px] mb-4">Product</h3>
             <ul className="space-y-3">
-              <li><a href="#features" className="text-white/70 hover:text-[#00c853] transition-colors">Features</a></li>
-              <li><a href="#how-it-works" className="text-white/70 hover:text-[#00c853] transition-colors">How it Works</a></li>
-              <li><a href="#pricing" className="text-white/70 hover:text-[#00c853] transition-colors">Pricing</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">FAQ</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Roadmap</a></li>
+              {['Features', 'How it Works', 'Pricing', 'FAQ', 'Roadmap'].map((item, index) => (
+                <li key={index}>
+                  <a href={`#${item.toLowerCase().replace(' ', '-')}`} className="text-white/60 hover:text-white transition-colors text-[14px]">
+                    {item}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Company Links */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Company</h3>
+            <h3 className="font-semibold text-[15px] mb-4">Company</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">About Us</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Blog</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Careers</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Press Kit</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Contact</a></li>
+              {['About Us', 'Blog', 'Careers', 'Press', 'Contact'].map((item, index) => (
+                <li key={index}>
+                  <a href="#" className="text-white/60 hover:text-white transition-colors text-[14px]">
+                    {item}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Legal Links */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Legal</h3>
+            <h3 className="font-semibold text-[15px] mb-4">Legal</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Cookie Policy</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Disclaimer</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Licenses</a></li>
+              {['Privacy', 'Terms', 'Security', 'Cookies'].map((item, index) => (
+                <li key={index}>
+                  <a href="#" className="text-white/60 hover:text-white transition-colors text-[14px]">
+                    {item}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
 
-        {/* Disclaimer */}
-        <div className="border-t border-white/10 pt-8 mb-8">
-          <p className="text-white/50 text-sm leading-relaxed">
-            <strong>Disclaimer:</strong> Tradeo is an educational platform designed to teach investment concepts through simulation.
-            The information provided is for educational purposes only and should not be considered as financial advice.
-            Trading and investing carry risk. Past performance does not guarantee future results.
-            Always consult with a certified financial advisor before making investment decisions.
-          </p>
-        </div>
-
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <div className="text-white/50 text-sm">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-white/50">
+          <div>
             © {currentYear} Tradeo. All rights reserved.
           </div>
-          <div className="flex items-center gap-6 text-sm">
-            <span className="text-white/50">Made with ❤️ for Southeast Asia</span>
+          <div className="flex items-center gap-4">
+            <span>Made for Southeast Asia</span>
             <div className="flex gap-2">
-              <span>🇮🇩</span>
-              <span>🇹🇭</span>
-              <span>🇻🇳</span>
-              <span>🇵🇭</span>
-              <span>🇲🇾</span>
-              <span>🇸🇬</span>
+              {['🇮🇩', '🇹🇭', '🇻🇳', '🇵🇭', '🇲🇾', '🇸🇬'].map((flag, index) => (
+                <span key={index}>{flag}</span>
+              ))}
             </div>
           </div>
         </div>

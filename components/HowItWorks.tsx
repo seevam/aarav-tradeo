@@ -3,103 +3,95 @@ export default function HowItWorks() {
     {
       number: "1",
       title: "Sign Up Free",
-      description: "Create your account in seconds. No credit card required. Start with $100,000 virtual capital to practice.",
+      description: "Create your account in seconds. No credit card required. Start with $100,000 virtual capital.",
       icon: "👤"
     },
     {
       number: "2",
       title: "Learn the Basics",
-      description: "Complete bite-sized lessons on stock market fundamentals. Earn XP and unlock new modules as you progress.",
+      description: "Complete bite-sized lessons on stock market fundamentals. Earn XP and unlock new modules.",
       icon: "📖"
     },
     {
       number: "3",
       title: "Practice Risk-Free",
-      description: "Use our simulator to trade real stocks with virtual money. Test strategies without financial risk.",
+      description: "Use our simulator to trade real stocks with virtual money. Test strategies without risk.",
       icon: "🎮"
     },
     {
       number: "4",
       title: "Get AI Guidance",
-      description: "Ask questions anytime to our AI assistant. Get personalized portfolio feedback and investment insights.",
+      description: "Ask questions anytime. Get personalized portfolio feedback and investment insights.",
       icon: "💡"
     },
     {
       number: "5",
       title: "Track & Compete",
-      description: "Monitor your progress, compete with friends, and climb the leaderboards. Stay motivated with challenges.",
+      description: "Monitor your progress, compete with friends, and climb the leaderboards.",
       icon: "🎯"
     },
     {
       number: "6",
       title: "Invest Confidently",
-      description: "Apply your knowledge to real investing when you're ready. Graduate from beginner to confident investor.",
+      description: "Apply your knowledge to real investing when ready. Graduate to confident investor.",
       icon: "🚀"
     }
   ];
 
   return (
-    <section id="how-it-works" className="py-16 md:py-24 lg:py-32 bg-[#f5f5f5]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="how-it-works" className="py-16 md:py-20 bg-[#f8f9ff]">
+      <div className="max-w-[1200px] mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-          <div className="inline-flex items-center gap-2 bg-[#b9f6ca]/30 rounded-full px-4 py-2 mb-6">
-            <span className="text-[#00c853] font-semibold text-sm">📍 Your Journey</span>
-          </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#212121] mb-4 md:mb-6">
-            From Zero to Investor in 6 Simple Steps
+        <div className="text-center max-w-[720px] mx-auto mb-12">
+          <h2 className="text-[36px] md:text-[44px] font-bold text-[#292929] mb-4">
+            Your investment journey
           </h2>
-          <p className="text-lg md:text-xl text-[#757575]">
-            A clear path designed to build your confidence and competence
+          <p className="text-[17px] text-[#666666]">
+            A clear path from beginner to confident investor
           </p>
         </div>
 
         {/* Steps Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {steps.map((step, index) => (
-            <div key={index} className="relative group">
-              {/* Step Card */}
-              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300">
-                {/* Step Number Badge */}
-                <div className="absolute -top-3 -left-3 w-12 h-12 bg-[#00c853] rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+            <div key={index} className="bg-white rounded-lg p-6 border border-gray-100">
+              {/* Icon and Number */}
+              <div className="flex items-center gap-3 mb-4">
+                <div className="text-4xl">{step.icon}</div>
+                <div className="w-8 h-8 bg-[#00d09c] rounded-full flex items-center justify-center text-white font-semibold text-[15px]">
                   {step.number}
                 </div>
-
-                {/* Icon */}
-                <div className="text-5xl mb-4 pt-4">
-                  {step.icon}
-                </div>
-
-                {/* Content */}
-                <h3 className="text-xl font-bold text-[#212121] mb-3">
-                  {step.title}
-                </h3>
-                <p className="text-[#757575] leading-relaxed">
-                  {step.description}
-                </p>
               </div>
+
+              {/* Content */}
+              <h3 className="text-[19px] font-semibold text-[#292929] mb-2">
+                {step.title}
+              </h3>
+              <p className="text-[15px] text-[#666666] leading-relaxed">
+                {step.description}
+              </p>
             </div>
           ))}
         </div>
 
-        {/* Bottom Stats */}
-        <div className="bg-white rounded-2xl md:rounded-3xl p-8 md:p-12 shadow-lg">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
+        {/* Stats */}
+        <div className="bg-white rounded-lg p-8 border border-gray-100">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-[#00c853] mb-2">5-10 min</div>
-              <div className="text-sm md:text-base text-[#757575]">Per lesson</div>
+              <div className="text-[32px] font-bold text-[#292929] mb-1">5-10 min</div>
+              <div className="text-[14px] text-[#666666]">Per lesson</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-[#00c853] mb-2">$100K</div>
-              <div className="text-sm md:text-base text-[#757575]">Virtual capital</div>
+              <div className="text-[32px] font-bold text-[#292929] mb-1">$100K</div>
+              <div className="text-[14px] text-[#666666]">Virtual capital</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-[#00c853] mb-2">24/7</div>
-              <div className="text-sm md:text-base text-[#757575]">AI assistance</div>
+              <div className="text-[32px] font-bold text-[#292929] mb-1">24/7</div>
+              <div className="text-[14px] text-[#666666]">AI assistance</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-[#00c853] mb-2">0</div>
-              <div className="text-sm md:text-base text-[#757575]">Financial risk</div>
+              <div className="text-[32px] font-bold text-[#292929] mb-1">0</div>
+              <div className="text-[14px] text-[#666666]">Financial risk</div>
             </div>
           </div>
         </div>
