@@ -3,13 +3,13 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#212121] text-white">
-      <div className="container mx-auto px-6 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         {/* Main Footer Content */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-12 mb-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-[#00C853] rounded-lg flex items-center justify-center">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-10 h-10 bg-[#00c853] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">T</span>
               </div>
               <span className="text-2xl font-bold">Tradeo</span>
@@ -18,17 +18,17 @@ export default function Footer() {
               Empowering the next generation of Southeast Asian investors through gamified learning and risk-free practice.
             </p>
             {/* Social Links */}
-            <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00C853] rounded-lg flex items-center justify-center transition-colors">
+            <div className="flex gap-4">
+              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00c853] rounded-lg flex items-center justify-center transition-colors">
                 <span className="text-xl">𝕏</span>
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00C853] rounded-lg flex items-center justify-center transition-colors">
+              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00c853] rounded-lg flex items-center justify-center transition-colors">
                 <span className="text-xl">📘</span>
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00C853] rounded-lg flex items-center justify-center transition-colors">
+              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00c853] rounded-lg flex items-center justify-center transition-colors">
                 <span className="text-xl">📷</span>
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00C853] rounded-lg flex items-center justify-center transition-colors">
+              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00c853] rounded-lg flex items-center justify-center transition-colors">
                 <span className="text-xl">▶️</span>
               </a>
             </div>
@@ -36,37 +36,37 @@ export default function Footer() {
 
           {/* Product Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Product</h3>
+            <h3 className="font-bold text-lg mb-4">Product</h3>
             <ul className="space-y-3">
-              <li><a href="#features" className="text-white/70 hover:text-[#00C853] transition-colors">Features</a></li>
-              <li><a href="#how-it-works" className="text-white/70 hover:text-[#00C853] transition-colors">How it Works</a></li>
-              <li><a href="#pricing" className="text-white/70 hover:text-[#00C853] transition-colors">Pricing</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">FAQ</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Roadmap</a></li>
+              <li><a href="#features" className="text-white/70 hover:text-[#00c853] transition-colors">Features</a></li>
+              <li><a href="#how-it-works" className="text-white/70 hover:text-[#00c853] transition-colors">How it Works</a></li>
+              <li><a href="#pricing" className="text-white/70 hover:text-[#00c853] transition-colors">Pricing</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">FAQ</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Roadmap</a></li>
             </ul>
           </div>
 
           {/* Company Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Company</h3>
+            <h3 className="font-bold text-lg mb-4">Company</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">About Us</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Blog</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Careers</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Press Kit</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Contact</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">About Us</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Blog</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Careers</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Press Kit</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Contact</a></li>
             </ul>
           </div>
 
           {/* Legal Links */}
           <div>
-            <h3 className="font-semibold text-lg mb-4">Legal</h3>
+            <h3 className="font-bold text-lg mb-4">Legal</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Cookie Policy</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Disclaimer</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Licenses</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Privacy Policy</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Terms of Service</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Cookie Policy</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Disclaimer</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[#00c853] transition-colors">Licenses</a></li>
             </ul>
           </div>
         </div>
@@ -82,13 +82,13 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-white/50 text-sm">
             © {currentYear} Tradeo. All rights reserved.
           </div>
-          <div className="flex items-center space-x-6 text-sm">
+          <div className="flex items-center gap-6 text-sm">
             <span className="text-white/50">Made with ❤️ for Southeast Asia</span>
-            <div className="flex space-x-2">
+            <div className="flex gap-2">
               <span>🇮🇩</span>
               <span>🇹🇭</span>
               <span>🇻🇳</span>

@@ -39,75 +39,67 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how-it-works" className="py-20 lg:py-32 bg-[#F5F5F5]">
-      <div className="container mx-auto px-6">
+    <section id="how-it-works" className="py-16 md:py-24 lg:py-32 bg-[#f5f5f5]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-2 bg-[#B9F6CA]/30 rounded-full px-4 py-2 mb-6">
-            <span className="text-[#00C853] font-medium text-sm">📍 Your Journey</span>
+        <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+          <div className="inline-flex items-center gap-2 bg-[#b9f6ca]/30 rounded-full px-4 py-2 mb-6">
+            <span className="text-[#00c853] font-semibold text-sm">📍 Your Journey</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#212121] mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#212121] mb-4 md:mb-6">
             From Zero to Investor in 6 Simple Steps
           </h2>
-          <p className="text-xl text-[#757575]">
+          <p className="text-lg md:text-xl text-[#757575]">
             A clear path designed to build your confidence and competence
           </p>
         </div>
 
-        {/* Steps */}
-        <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {steps.map((step, index) => (
-              <div key={index} className="relative">
-                {/* Connecting Line (hidden on mobile, shown on larger screens) */}
-                {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-12 left-full w-full h-0.5 bg-gradient-to-r from-[#00C853] to-transparent -ml-4 z-0"
-                       style={{ width: 'calc(100% - 2rem)' }}></div>
-                )}
-
-                {/* Step Card */}
-                <div className="relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow z-10">
-                  {/* Step Number Badge */}
-                  <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#00C853] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
-                    {step.number}
-                  </div>
-
-                  {/* Icon */}
-                  <div className="text-5xl mb-4 pt-4">
-                    {step.icon}
-                  </div>
-
-                  {/* Content */}
-                  <h3 className="text-xl font-bold text-[#212121] mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-[#757575] leading-relaxed">
-                    {step.description}
-                  </p>
+        {/* Steps Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
+          {steps.map((step, index) => (
+            <div key={index} className="relative group">
+              {/* Step Card */}
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300">
+                {/* Step Number Badge */}
+                <div className="absolute -top-3 -left-3 w-12 h-12 bg-[#00c853] rounded-full flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                  {step.number}
                 </div>
+
+                {/* Icon */}
+                <div className="text-5xl mb-4 pt-4">
+                  {step.icon}
+                </div>
+
+                {/* Content */}
+                <h3 className="text-xl font-bold text-[#212121] mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-[#757575] leading-relaxed">
+                  {step.description}
+                </p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
 
         {/* Bottom Stats */}
-        <div className="mt-20 bg-white rounded-3xl p-12 shadow-lg">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
+        <div className="bg-white rounded-2xl md:rounded-3xl p-8 md:p-12 shadow-lg">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold text-[#00C853] mb-2">5-10 min</div>
-              <div className="text-[#757575]">Per lesson</div>
+              <div className="text-3xl md:text-4xl font-bold text-[#00c853] mb-2">5-10 min</div>
+              <div className="text-sm md:text-base text-[#757575]">Per lesson</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-[#00C853] mb-2">$100K</div>
-              <div className="text-[#757575]">Virtual capital</div>
+              <div className="text-3xl md:text-4xl font-bold text-[#00c853] mb-2">$100K</div>
+              <div className="text-sm md:text-base text-[#757575]">Virtual capital</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-[#00C853] mb-2">24/7</div>
-              <div className="text-[#757575]">AI assistance</div>
+              <div className="text-3xl md:text-4xl font-bold text-[#00c853] mb-2">24/7</div>
+              <div className="text-sm md:text-base text-[#757575]">AI assistance</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-[#00C853] mb-2">0</div>
-              <div className="text-[#757575]">Financial risk</div>
+              <div className="text-3xl md:text-4xl font-bold text-[#00c853] mb-2">0</div>
+              <div className="text-sm md:text-base text-[#757575]">Financial risk</div>
             </div>
           </div>
         </div>
