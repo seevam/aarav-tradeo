@@ -6,45 +6,45 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <section className="relative bg-white">
-      {/* Navigation - Groww Style */}
-      <nav className="w-full bg-white border-b border-gray-100">
+    <>
+      {/* Navigation */}
+      <nav className="w-full bg-white border-b border-[#E0E0E0] sticky top-0 z-50">
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="flex items-center justify-between h-[72px]">
+          <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <div className="flex items-center gap-2">
-              <div className="w-9 h-9 bg-[#00d09c] rounded-md flex items-center justify-center">
-                <span className="text-white font-bold text-lg">T</span>
+              <div className="w-10 h-10 bg-[#00C853] rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xl">T</span>
               </div>
-              <span className="text-xl font-semibold text-[#292929]">Tradeo</span>
+              <span className="text-xl font-semibold text-[#212121]">Tradeo</span>
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-10">
-              <a href="#features" className="text-[#666666] hover:text-[#292929] transition-colors text-[15px] font-medium">
+            <div className="hidden md:flex items-center gap-8">
+              <a href="#features" className="text-[#757575] hover:text-[#00C853] transition-colors font-medium">
                 Features
               </a>
-              <a href="#how-it-works" className="text-[#666666] hover:text-[#292929] transition-colors text-[15px] font-medium">
+              <a href="#how-it-works" className="text-[#757575] hover:text-[#00C853] transition-colors font-medium">
                 How it Works
               </a>
-              <a href="#pricing" className="text-[#666666] hover:text-[#292929] transition-colors text-[15px] font-medium">
+              <a href="#pricing" className="text-[#757575] hover:text-[#00C853] transition-colors font-medium">
                 Pricing
+              </a>
+              <a href="#faq" className="text-[#757575] hover:text-[#00C853] transition-colors font-medium">
+                FAQ
               </a>
             </div>
 
-            {/* CTA Buttons */}
+            {/* CTA Button */}
             <div className="flex items-center gap-3">
-              <button className="hidden sm:block text-[#00d09c] font-semibold hover:text-[#00b386] transition-colors text-[15px]">
-                Log In
-              </button>
-              <button className="bg-[#00d09c] hover:bg-[#00b386] text-white font-semibold px-6 py-2.5 rounded-md transition-all text-[15px]">
-                Get Started
+              <button className="bg-[#00C853] hover:bg-[#00A043] text-white font-semibold px-6 py-3 rounded-2xl transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5">
+                Download Now
               </button>
 
               {/* Mobile Menu Button */}
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="md:hidden p-2 text-[#666666]"
+                className="md:hidden p-2 text-[#757575]"
                 aria-label="Toggle menu"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -60,16 +60,19 @@ export default function Hero() {
 
           {/* Mobile Menu */}
           {mobileMenuOpen && (
-            <div className="md:hidden py-4 border-t border-gray-100">
+            <div className="md:hidden py-4 border-t border-[#E0E0E0]">
               <div className="flex flex-col gap-4">
-                <a href="#features" className="text-[#666666] hover:text-[#292929] transition-colors text-[15px] font-medium">
+                <a href="#features" className="text-[#757575] hover:text-[#00C853] transition-colors font-medium">
                   Features
                 </a>
-                <a href="#how-it-works" className="text-[#666666] hover:text-[#292929] transition-colors text-[15px] font-medium">
+                <a href="#how-it-works" className="text-[#757575] hover:text-[#00C853] transition-colors font-medium">
                   How it Works
                 </a>
-                <a href="#pricing" className="text-[#666666] hover:text-[#292929] transition-colors text-[15px] font-medium">
+                <a href="#pricing" className="text-[#757575] hover:text-[#00C853] transition-colors font-medium">
                   Pricing
+                </a>
+                <a href="#faq" className="text-[#757575] hover:text-[#00C853] transition-colors font-medium">
+                  FAQ
                 </a>
               </div>
             </div>
@@ -77,74 +80,118 @@ export default function Hero() {
         </div>
       </nav>
 
-      {/* Hero Content - Groww Style: Large, centered, minimal */}
-      <div className="max-w-[1200px] mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28">
-        <div className="text-center max-w-[880px] mx-auto">
-          {/* Main Headline - Very Large */}
-          <h1 className="text-[44px] md:text-[64px] lg:text-[72px] font-bold text-[#292929] leading-[1.1] mb-6">
-            Groww your wealth with
-            <br />
-            <span className="text-[#00d09c]">smart investing</span>
-          </h1>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-[#00C853] to-[#B9F6CA] min-h-screen flex items-center overflow-hidden">
+        <div className="max-w-[1200px] mx-auto px-6 py-24 w-full">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column - Text Content */}
+            <div className="text-white space-y-8">
+              <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+                Learn to Invest Like a Game
+              </h1>
 
-          {/* Subheading */}
-          <p className="text-[18px] md:text-[20px] text-[#666666] leading-relaxed mb-10 max-w-[680px] mx-auto">
-            Master the stock market through gamified lessons, risk-free simulations, and AI-powered guidance.
-            Built for young investors in Southeast Asia.
-          </p>
+              <p className="text-xl md:text-2xl text-white/90 leading-relaxed">
+                Master the stock market through fun, bite-sized lessons. No risk. Real knowledge. Built for Southeast Asian youth.
+              </p>
 
-          {/* CTA Button - Single, prominent */}
-          <div className="flex justify-center mb-12">
-            <button className="bg-[#00d09c] hover:bg-[#00b386] text-white font-semibold px-10 py-4 rounded-md transition-all text-[16px] shadow-md hover:shadow-lg">
-              Start Investing for Free
-            </button>
-          </div>
-
-          {/* Trust Indicators - Minimal */}
-          <div className="flex flex-wrap items-center justify-center gap-8 text-[#999999] text-[14px]">
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-[#00d09c]" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
-              </svg>
-              <span>50,000+ Active Learners</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-[#00d09c]" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-              <span>4.8 Rating</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-[#00d09c]" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-              </svg>
-              <span>100% Free to Start</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Categories Section - Groww style cards */}
-      <div className="bg-[#f8f9ff] py-12">
-        <div className="max-w-[1200px] mx-auto px-6">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {[
-              { icon: '📚', title: 'Learn', subtitle: '100+ lessons', color: 'bg-[#e8f5ff]' },
-              { icon: '📊', title: 'Simulate', subtitle: 'Risk-free trading', color: 'bg-[#fff4e6]' },
-              { icon: '🤖', title: 'AI Guide', subtitle: '24/7 assistance', color: 'bg-[#f3e8ff]' },
-              { icon: '🏆', title: 'Compete', subtitle: 'With friends', color: 'bg-[#e6fff5]' }
-            ].map((item, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 hover:shadow-md transition-shadow border border-gray-100">
-                <div className={`w-12 h-12 ${item.color} rounded-lg flex items-center justify-center text-2xl mb-3`}>
-                  {item.icon}
-                </div>
-                <div className="text-[17px] font-semibold text-[#292929] mb-1">{item.title}</div>
-                <div className="text-[14px] text-[#666666]">{item.subtitle}</div>
+              {/* CTAs */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <button className="bg-white text-[#00C853] hover:bg-gray-50 font-semibold px-8 py-4 rounded-2xl transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
+                  Download Now
+                </button>
+                <button className="bg-transparent border-2 border-white text-white hover:bg-white/10 font-semibold px-8 py-4 rounded-2xl transition-all">
+                  Watch Demo
+                </button>
               </div>
-            ))}
+
+              {/* App Store Badges */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                <a href="#" className="inline-block">
+                  <div className="bg-black/90 hover:bg-black px-6 py-3 rounded-xl flex items-center gap-3 transition-colors">
+                    <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z"/>
+                    </svg>
+                    <div className="text-left">
+                      <div className="text-xs text-white/80">Download on the</div>
+                      <div className="text-lg font-semibold">App Store</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" className="inline-block">
+                  <div className="bg-black/90 hover:bg-black px-6 py-3 rounded-xl flex items-center gap-3 transition-colors">
+                    <svg className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                    </svg>
+                    <div className="text-left">
+                      <div className="text-xs text-white/80">GET IT ON</div>
+                      <div className="text-lg font-semibold">Google Play</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            {/* Right Column - App Mockup */}
+            <div className="relative lg:block hidden">
+              {/* Phone Mockup */}
+              <div className="relative mx-auto w-[300px] transform rotate-[8deg] hover:rotate-[5deg] transition-transform">
+                <div className="bg-[#212121] rounded-[40px] p-3 shadow-2xl">
+                  <div className="bg-white rounded-[32px] overflow-hidden">
+                    {/* App Screenshot Content */}
+                    <div className="bg-gradient-to-b from-[#00C853] to-[#00A043] p-6 text-white">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="text-2xl font-bold">Tradeo</div>
+                        <div className="bg-white/20 px-3 py-1 rounded-full text-sm">🔥 7 Day Streak</div>
+                      </div>
+                      <div className="text-sm opacity-90 mb-2">Portfolio Value</div>
+                      <div className="text-3xl font-bold">$112,500</div>
+                      <div className="text-sm text-white/80">+12.5% this week</div>
+                    </div>
+
+                    <div className="p-6 bg-white space-y-3">
+                      <div className="bg-[#F5F5F5] rounded-xl p-4 flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-10 bg-[#42A5F5]/20 rounded-full flex items-center justify-center text-xl">
+                            📚
+                          </div>
+                          <div>
+                            <div className="font-semibold text-sm">Learning Module</div>
+                            <div className="text-xs text-[#757575]">Continue lesson</div>
+                          </div>
+                        </div>
+                        <div className="text-[#00C853] font-semibold">→</div>
+                      </div>
+
+                      <div className="bg-[#F5F5F5] rounded-xl p-4 flex items-center justify-between">
+                        <div className="flex items-center gap-3">
+                          <div className="w-10 h-10 bg-[#FFCA28]/20 rounded-full flex items-center justify-center text-xl">
+                            📊
+                          </div>
+                          <div>
+                            <div className="font-semibold text-sm">Practice Trading</div>
+                            <div className="text-xs text-[#757575]">Risk-free simulator</div>
+                          </div>
+                        </div>
+                        <div className="text-[#00C853] font-semibold">→</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Floating Elements */}
+              <div className="absolute -top-8 -right-8 bg-white rounded-2xl p-4 shadow-xl animate-bounce">
+                <div className="text-3xl">💰</div>
+                <div className="text-xs font-bold text-[#00C853]">+$2,500</div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+
+        {/* Background Decorations */}
+        <div className="absolute top-20 right-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+      </section>
+    </>
   );
 }
