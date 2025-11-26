@@ -108,14 +108,15 @@ export default function Hero() {
                     <span className="text-xs text-[#00C853] bg-[#B9F6CA]/30 px-3 py-1 rounded-full">+12.5%</span>
                   </div>
                   <div className="text-2xl sm:text-3xl font-bold text-[#212121]">$112,500</div>
-                  <div className="h-24 sm:h-32 bg-gradient-to-t from-[#00C853]/20 to-transparent rounded-lg relative">
+                  <div className="h-24 sm:h-32 bg-gradient-to-t from-[#00C853]/20 to-transparent rounded-lg relative overflow-hidden">
                     {/* Simplified chart visualization */}
-                    <svg className="w-full h-full" viewBox="0 0 200 80" preserveAspectRatio="none">
+                    <svg className="w-full h-full" viewBox="0 0 200 80" preserveAspectRatio="xMidYMid meet">
                       <path
                         d="M 0,60 L 40,50 L 80,55 L 120,35 L 160,40 L 200,20"
                         fill="none"
                         stroke="#00C853"
                         strokeWidth="2"
+                        vectorEffect="non-scaling-stroke"
                       />
                     </svg>
                   </div>
@@ -154,14 +155,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
-
-      {/* Background Decorations */}
-      <div className="absolute top-0 right-0 -z-10 opacity-10 pointer-events-none">
-        <div className="w-64 h-64 sm:w-96 sm:h-96 bg-[#00C853] rounded-full blur-3xl"></div>
-      </div>
-      <div className="absolute bottom-0 left-0 -z-10 opacity-10 pointer-events-none">
-        <div className="w-64 h-64 sm:w-96 sm:h-96 bg-[#B9F6CA] rounded-full blur-3xl"></div>
       </div>
     </section>
   );
