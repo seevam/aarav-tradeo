@@ -30,17 +30,17 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-20 lg:py-32 bg-[#F5F5F5]">
+    <section className="py-20 lg:py-32 bg-[--color-light]">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-2 bg-[#B9F6CA]/30 rounded-full px-4 py-2 mb-6">
-            <span className="text-[#00C853] font-medium text-sm">💬 Success Stories</span>
+          <div className="inline-flex items-center space-x-2 bg-[--color-primary-light]/30 rounded-full px-4 py-2 mb-6">
+            <span className="text-[--color-primary] font-medium text-sm">💬 Success Stories</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#212121] mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[--color-dark] mb-6">
             Loved by Young Investors Across SEA
           </h2>
-          <p className="text-xl text-[#757575]">
+          <p className="text-xl text-[--color-gray]">
             Join thousands of learners who transformed from beginners to confident investors
           </p>
         </div>
@@ -59,23 +59,23 @@ export default function Testimonials() {
               </div>
 
               {/* Quote */}
-              <p className="text-[#757575] mb-6 leading-relaxed italic">
+              <p className="text-[--color-gray] mb-6 leading-relaxed italic">
                 "{testimonial.quote}"
               </p>
 
               {/* User Info */}
               <div className="flex items-center space-x-4 pt-4 border-t border-gray-100">
-                <div className="w-12 h-12 bg-[#B9F6CA]/30 rounded-full flex items-center justify-center text-2xl">
+                <div className="w-12 h-12 bg-[--color-primary-light]/30 rounded-full flex items-center justify-center text-2xl">
                   {testimonial.avatar}
                 </div>
                 <div>
-                  <div className="font-semibold text-[#212121]">
+                  <div className="font-semibold text-[--color-dark]">
                     {testimonial.name}, {testimonial.age}
                   </div>
-                  <div className="text-sm text-[#757575]">
+                  <div className="text-sm text-[--color-gray]">
                     {testimonial.role}
                   </div>
-                  <div className="text-xs text-[#757575]">
+                  <div className="text-xs text-[--color-gray]">
                     {testimonial.location}
                   </div>
                 </div>
@@ -88,20 +88,20 @@ export default function Testimonials() {
         <div className="mt-16 bg-white rounded-2xl p-8 shadow-lg">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-[#00C853] mb-2">4.8/5</div>
-              <div className="text-sm text-[#757575]">Average Rating</div>
+              <div className="text-3xl font-bold text-[--color-primary] mb-2">4.8/5</div>
+              <div className="text-sm text-[--color-gray]">Average Rating</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-[#00C853] mb-2">50K+</div>
-              <div className="text-sm text-[#757575]">Active Users</div>
+              <div className="text-3xl font-bold text-[--color-primary] mb-2">50K+</div>
+              <div className="text-sm text-[--color-gray]">Active Users</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-[#00C853] mb-2">60%</div>
-              <div className="text-sm text-[#757575]">Complete First Module</div>
+              <div className="text-3xl font-bold text-[--color-primary] mb-2">60%</div>
+              <div className="text-sm text-[--color-gray]">Complete First Module</div>
             </div>
             <div>
-              <div className="text-3xl font-bold text-[#00C853] mb-2">12 min</div>
-              <div className="text-sm text-[#757575]">Avg. Session Time</div>
+              <div className="text-3xl font-bold text-[--color-primary] mb-2">12 min</div>
+              <div className="text-sm text-[--color-gray]">Avg. Session Time</div>
             </div>
           </div>
         </div>

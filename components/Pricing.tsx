@@ -4,13 +4,13 @@ export default function Pricing() {
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-2 bg-[#B9F6CA]/30 rounded-full px-4 py-2 mb-6">
-            <span className="text-[#00C853] font-medium text-sm">💰 Simple Pricing</span>
+          <div className="inline-flex items-center space-x-2 bg-[--color-primary-light]/30 rounded-full px-4 py-2 mb-6">
+            <span className="text-[--color-primary] font-medium text-sm">💰 Simple Pricing</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-[#212121] mb-6">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[--color-dark] mb-6">
             Start Free, Upgrade When Ready
           </h2>
-          <p className="text-xl text-[#757575]">
+          <p className="text-xl text-[--color-gray]">
             Everything you need to learn investing is free. Premium unlocks advanced features.
           </p>
         </div>
@@ -20,14 +20,14 @@ export default function Pricing() {
           {/* Free Plan */}
           <div className="bg-white border-2 border-gray-200 rounded-3xl p-8 lg:p-10">
             <div className="mb-8">
-              <div className="text-sm font-semibold text-[#757575] uppercase tracking-wide mb-3">
+              <div className="text-sm font-semibold text-[--color-gray] uppercase tracking-wide mb-3">
                 Free Forever
               </div>
               <div className="flex items-baseline mb-4">
-                <span className="text-5xl font-bold text-[#212121]">$0</span>
-                <span className="text-[#757575] ml-2">/month</span>
+                <span className="text-5xl font-bold text-[--color-dark]">$0</span>
+                <span className="text-[--color-gray] ml-2">/month</span>
               </div>
-              <p className="text-[#757575]">
+              <p className="text-[--color-gray]">
                 Perfect for beginners starting their investment journey
               </p>
             </div>
@@ -44,21 +44,21 @@ export default function Pricing() {
                 "Standard avatars & themes"
               ].map((feature, index) => (
                 <li key={index} className="flex items-start">
-                  <svg className="w-6 h-6 text-[#00C853] mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-6 h-6 text-[--color-primary] mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-[#757575]">{feature}</span>
+                  <span className="text-[--color-gray]">{feature}</span>
                 </li>
               ))}
             </ul>
 
-            <button className="w-full bg-white border-2 border-[#00C853] text-[#00C853] hover:bg-[#00C853] hover:text-white font-semibold py-4 rounded-xl transition-all">
+            <button className="w-full bg-white border-2 border-[--color-primary] text-[--color-primary] hover:bg-[--color-primary] hover:text-white font-semibold py-4 rounded-xl transition-all">
               Get Started Free
             </button>
           </div>
 
           {/* Premium Plan */}
-          <div className="bg-gradient-to-br from-[#00C853] to-[#00A043] rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden">
+          <div className="bg-gradient-to-br from-[--color-primary] to-[--color-primary-dark] rounded-3xl p-8 lg:p-10 text-white relative overflow-hidden">
             {/* Popular Badge */}
             <div className="absolute top-6 right-6">
               <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-1.5">
@@ -108,7 +108,7 @@ export default function Pricing() {
               ))}
             </ul>
 
-            <button className="w-full bg-white text-[#00C853] hover:bg-white/90 font-semibold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl">
+            <button className="w-full bg-white text-[--color-primary] hover:bg-white/90 font-semibold py-4 rounded-xl transition-all shadow-lg hover:shadow-xl">
               Start Premium Trial
             </button>
 
@@ -119,31 +119,31 @@ export default function Pricing() {
 
         {/* Trust Indicators */}
         <div className="mt-16 text-center">
-          <p className="text-[#757575] mb-6">Trusted by 50,000+ young investors across Southeast Asia</p>
+          <p className="text-[--color-gray] mb-6">Trusted by 50,000+ young investors across Southeast Asia</p>
           <div className="flex justify-center items-center space-x-8 flex-wrap gap-4">
             <div className="flex items-center space-x-2">
               <span className="text-2xl">🇮🇩</span>
-              <span className="text-[#757575]">Indonesia</span>
+              <span className="text-[--color-gray]">Indonesia</span>
             </div>
             <div className="flex items-center space-x-2">
               <span className="text-2xl">🇹🇭</span>
-              <span className="text-[#757575]">Thailand</span>
+              <span className="text-[--color-gray]">Thailand</span>
             </div>
             <div className="flex items-center space-x-2">
               <span className="text-2xl">🇻🇳</span>
-              <span className="text-[#757575]">Vietnam</span>
+              <span className="text-[--color-gray]">Vietnam</span>
             </div>
             <div className="flex items-center space-x-2">
               <span className="text-2xl">🇵🇭</span>
-              <span className="text-[#757575]">Philippines</span>
+              <span className="text-[--color-gray]">Philippines</span>
             </div>
             <div className="flex items-center space-x-2">
               <span className="text-2xl">🇲🇾</span>
-              <span className="text-[#757575]">Malaysia</span>
+              <span className="text-[--color-gray]">Malaysia</span>
             </div>
             <div className="flex items-center space-x-2">
               <span className="text-2xl">🇸🇬</span>
-              <span className="text-[#757575]">Singapore</span>
+              <span className="text-[--color-gray]">Singapore</span>
             </div>
           </div>
         </div>

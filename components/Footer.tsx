@@ -2,14 +2,14 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#212121] text-white">
+    <footer className="bg-[--color-dark] text-white">
       <div className="container mx-auto px-6 py-16">
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-[#00C853] rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-[--color-primary] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">T</span>
               </div>
               <span className="text-2xl font-bold">Tradeo</span>
@@ -19,16 +19,16 @@ export default function Footer() {
             </p>
             {/* Social Links */}
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00C853] rounded-lg flex items-center justify-center transition-colors">
+              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[--color-primary] rounded-lg flex items-center justify-center transition-colors">
                 <span className="text-xl">𝕏</span>
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00C853] rounded-lg flex items-center justify-center transition-colors">
+              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[--color-primary] rounded-lg flex items-center justify-center transition-colors">
                 <span className="text-xl">📘</span>
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00C853] rounded-lg flex items-center justify-center transition-colors">
+              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[--color-primary] rounded-lg flex items-center justify-center transition-colors">
                 <span className="text-xl">📷</span>
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[#00C853] rounded-lg flex items-center justify-center transition-colors">
+              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-[--color-primary] rounded-lg flex items-center justify-center transition-colors">
                 <span className="text-xl">▶️</span>
               </a>
             </div>
@@ -38,11 +38,11 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Product</h3>
             <ul className="space-y-3">
-              <li><a href="#features" className="text-white/70 hover:text-[#00C853] transition-colors">Features</a></li>
-              <li><a href="#how-it-works" className="text-white/70 hover:text-[#00C853] transition-colors">How it Works</a></li>
-              <li><a href="#pricing" className="text-white/70 hover:text-[#00C853] transition-colors">Pricing</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">FAQ</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Roadmap</a></li>
+              <li><a href="#features" className="text-white/70 hover:text-[--color-primary] transition-colors">Features</a></li>
+              <li><a href="#how-it-works" className="text-white/70 hover:text-[--color-primary] transition-colors">How it Works</a></li>
+              <li><a href="#pricing" className="text-white/70 hover:text-[--color-primary] transition-colors">Pricing</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[--color-primary] transition-colors">FAQ</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[--color-primary] transition-colors">Roadmap</a></li>
             </ul>
           </div>
 
@@ -50,11 +50,11 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Company</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">About Us</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Blog</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Careers</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Press Kit</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Contact</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[--color-primary] transition-colors">About Us</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[--color-primary] transition-colors">Blog</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[--color-primary] transition-colors">Careers</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[--color-primary] transition-colors">Press Kit</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[--color-primary] transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -62,11 +62,11 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">Legal</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Cookie Policy</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Disclaimer</a></li>
-              <li><a href="#" className="text-white/70 hover:text-[#00C853] transition-colors">Licenses</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[--color-primary] transition-colors">Privacy Policy</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[--color-primary] transition-colors">Terms of Service</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[--color-primary] transition-colors">Cookie Policy</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[--color-primary] transition-colors">Disclaimer</a></li>
+              <li><a href="#" className="text-white/70 hover:text-[--color-primary] transition-colors">Licenses</a></li>
             </ul>
           </div>
         </div>
