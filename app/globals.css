@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+
+  --color-primary: #00C853;
+  --color-primary-dark: #00A043;
+  --color-primary-light: #B9F6CA;
+}
 
 * {
   margin: 0;
@@ -10,7 +16,7 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-family: var(--font-sans);
   background-color: #F5F5F5;
   color: #212121;
   -webkit-font-smoothing: antialiased;
